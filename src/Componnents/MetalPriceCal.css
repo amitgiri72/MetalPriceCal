@@ -1,0 +1,149 @@
+
+  .calculator-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 480px;
+    margin: 20px auto;
+    padding: 24px;
+  }
+
+  .calculator-header {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 16px;
+  }
+
+  .calculator-title {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0;
+  }
+
+  .cal-form {
+    margin-bottom: 20px;
+  }
+
+  .form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+  }
+
+  .form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+    margin-bottom: 16px;
+    outline: none;
+  }
+
+  .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+
+  .weight-input-group {
+    display: flex;
+    gap: 12px;
+  }
+
+  .weight-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .weight-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+
+  .unit-select {
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    outline: none;
+  }
+
+  .result-panel {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 24px;
+  }
+
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .current-price {
+    color: #666;
+  }
+
+  .current-price-label {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .current-price-value {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .total-value {
+    text-align: right;
+  }
+
+  .total-value-label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 4px;
+  }
+
+  .total-value-amount {
+    font-size: 28px;
+    font-weight: 600;
+    color: #007bff;
+  }
+
+  @media (max-width: 480px) {
+    .calculator-card {
+      margin: 10px;
+      padding: 16px;
+    }
+
+    .weight-input-group {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .unit-select {
+      width: 100%;
+    }
+
+    .price-row {
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .total-value {
+      text-align: center;
+    }
+  }
+
